@@ -1,318 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment_01</title>
     <!-- ===============  Font Awesome CSS Link=============== -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <!-- ===============  Bootstrap CSS Link=============== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- ===============  Custom CSS Link =============== -->
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- =============== Navbar With Bootstrap Class =============== -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow p-3 mb-5 bg-body rounded" id="demo_nabvar">
-        <div class="container">
-            <a class="navbar-brand" href="#">1st Assignment</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary shadow p-3 mb-5 bg-body rounded"
+      id="demo_nabvar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">1st Assignment</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#demo_assignment_list">Assignment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#demo_dropdown">Module</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#demo_contact_form">Contact us</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <button type="button" class="btn btn-outline-secondary">
+              Log in
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#demo_assignment_list">Assignment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#demo_dropdown">Module</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#demo_contact_form">Contact us</a>
-                    </li>
-                </ul>
-                <span class="navbar-text">
-                    <button type="button" class="btn btn-outline-secondary">
-                        Log in
-                    </button>
-                </span>
-            </div>
+          </span>
         </div>
+      </div>
     </nav>
 
     <!-- =============== List With Bootstrap Class =============== -->
-    <div class="container my-5 shadow p-3 mb-5 bg-body rounded assignment" id="demo_list">
-        <h2 class="d-flex justify-content-center">List with Bootstrap</h2>
-        <br />
-        <h4>(Module-5) Assignment List:</h4>
-        <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-primary">1. Create an HTML Structure and add CSS and
-                Bootstrap to it.
-                <i class="fa-solid fa-circle-check"></i></a>
-            <a href="#demo_buttons" class="list-group-item list-group-item-action list-group-item-secondary">2. Create
-                10 Buttons by Bootstrap Each button should have different
-                colors and properties. <i class="fa-solid fa-circle-check"></i></a>
-            <a href="#demo_card" class="list-group-item list-group-item-action list-group-item-success">3. Create a Card
-                with Bootstrap class.
-                <i class="fa-solid fa-circle-check"></i></a>
-            <a href="#demo_contact_form" class="list-group-item list-group-item-action list-group-item-danger">4. Create
-                some Form using form-group Bootstrap class.
-                <i class="fa-solid fa-circle-check"></i></a>
-            <a href="#demo_assignment_list" class="list-group-item list-group-item-action list-group-item-warning">5.
-                Create some List with list-group Bootstrap class.
-                <i class="fa-solid fa-circle-check"></i></a>
-            <a href="#demo_nabvar" class="list-group-item list-group-item-action list-group-item-info">6. Create a
-                Navbar with Bootstrap.
-                <i class="fa-solid fa-circle-check"></i></a>
-            <a href="#demo_progress" class="list-group-item list-group-item-action list-group-item-dark">7. Create a
-                Progress-bar with Bootstrap.
-                <i class="fa-solid fa-circle-check"></i></a>
-            <a href="#demo_pagination" class="list-group-item list-group-item-action list-group-item-primary">8. Create
-                a Pagination with Bootstrap.
-                <i class="fa-solid fa-circle-check"></i></a>
-            <a href="#demo_table" class="list-group-item list-group-item-action list-group-item-secondary">9. Create a
-                Table with Bootstrap.
-                <i class="fa-solid fa-circle-check"></i></a>
-            <a href="#demo_dropdown" class="list-group-item list-group-item-success">10. Create a Dropdown with
-                Bootstrap.
-                <i class="fa-solid fa-circle-check"></i></a>
-        </div>
+    <div
+      class="container my-5 shadow p-3 mb-5 bg-body rounded assignment"
+      id="demo_list"
+    >
+      <h2 class="d-flex justify-content-center">List with Bootstrap</h2>
+      <br />
+      <h4>(Module-5) Assignment List:</h4>
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-primary"
+          >1. Create an HTML Structure and add CSS and Bootstrap to it.
+          <i class="fa-solid fa-circle-check"></i
+        ></a>
+        <a
+          href="#demo_buttons"
+          class="list-group-item list-group-item-action list-group-item-secondary"
+          >2. Create 10 Buttons by Bootstrap Each button should have different
+          colors and properties. <i class="fa-solid fa-circle-check"></i
+        ></a>
+        <a
+          href="#demo_card"
+          class="list-group-item list-group-item-action list-group-item-success"
+          >3. Create a Card with Bootstrap class.
+          <i class="fa-solid fa-circle-check"></i
+        ></a>
+        <a
+          href="#demo_contact_form"
+          class="list-group-item list-group-item-action list-group-item-danger"
+          >4. Create some Form using form-group Bootstrap class.
+          <i class="fa-solid fa-circle-check"></i
+        ></a>
+        <a
+          href="#demo_assignment_list"
+          class="list-group-item list-group-item-action list-group-item-warning"
+          >5. Create some List with list-group Bootstrap class.
+          <i class="fa-solid fa-circle-check"></i
+        ></a>
+        <a
+          href="#demo_nabvar"
+          class="list-group-item list-group-item-action list-group-item-info"
+          >6. Create a Navbar with Bootstrap.
+          <i class="fa-solid fa-circle-check"></i
+        ></a>
+        <a
+          href="#demo_progress"
+          class="list-group-item list-group-item-action list-group-item-dark"
+          >7. Create a Progress-bar with Bootstrap.
+          <i class="fa-solid fa-circle-check"></i
+        ></a>
+        <a
+          href="#demo_pagination"
+          class="list-group-item list-group-item-action list-group-item-primary"
+          >8. Create a Pagination with Bootstrap.
+          <i class="fa-solid fa-circle-check"></i
+        ></a>
+        <a
+          href="#demo_table"
+          class="list-group-item list-group-item-action list-group-item-secondary"
+          >9. Create a Table with Bootstrap.
+          <i class="fa-solid fa-circle-check"></i
+        ></a>
+        <a href="#demo_dropdown" class="list-group-item list-group-item-success"
+          >10. Create a Dropdown with Bootstrap.
+          <i class="fa-solid fa-circle-check"></i
+        ></a>
+      </div>
     </div>
 
     <!-- =============== 10 Buttons With Bootstrap Class  =============== -->
-    <div class="container my-5 shadow p-3 mb-5 bg-body rounded assignment" id="demo_buttons">
-        <h2 class="d-flex justify-content-center">10 Button with Bootstrap</h2>
-        <br />
-        <button type="button" class="btn btn-primary">Button 01</button>
-        <button type="button" class="btn btn-outline-primary">Button 02</button>
-        <button type="button" class="btn btn-secondary">Button 03</button>
-        <button type="button" class="btn btn-outline-secondary">Button 04</button>
-        <button type="button" class="btn btn-warning">Button 05</button>
-        <button type="button" class="btn btn-outline-warning">Button 06</button>
-        <button type="button" class="btn btn-info">Button 07</button>
-        <button type="button" class="btn btn-outline-info">Button 08</button>
-        <button type="button" class="btn btn-dark">Button 09</button>
-        <button type="button" class="btn btn-outline-dark">Button 10</button>
+    <div
+      class="container my-5 shadow p-3 mb-5 bg-body rounded assignment"
+      id="demo_buttons"
+    >
+      <h2 class="d-flex justify-content-center">10 Button with Bootstrap</h2>
+      <br />
+      <button type="button" class="btn btn-primary">Button 01</button>
+      <button type="button" class="btn btn-outline-primary">Button 02</button>
+      <button type="button" class="btn btn-secondary">Button 03</button>
+      <button type="button" class="btn btn-outline-secondary">Button 04</button>
+      <button type="button" class="btn btn-warning">Button 05</button>
+      <button type="button" class="btn btn-outline-warning">Button 06</button>
+      <button type="button" class="btn btn-info">Button 07</button>
+      <button type="button" class="btn btn-outline-info">Button 08</button>
+      <button type="button" class="btn btn-dark">Button 09</button>
+      <button type="button" class="btn btn-outline-dark">Button 10</button>
     </div>
 
     <!-- =============== Dropdown With Bootstrap Class =============== -->
-    <div class="container my-5 shadow p-3 mb-5 bg-body rounded assignment" id="demo_dropdown">
-        <h2 class="d-flex justify-content-center">Dropdown with Bootstrap</h2>
-        <br />
-        <div class="btn-group dropend">
-            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                1st Assignment | All Modules
-            </button>
-            <ul class="dropdown-menu">
-                <li>
-                    <a class="dropdown-item" href="#module_01">Module 01 - [Foundation] Instruction of Web Development
-                        and
-                        HTML</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="#module_02">Module 02 - [Foundation] Learn CSS</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="#module_03">Module 03 - [Foundation] CSS Framework Strategy and
-                        Bootstrap</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="#">Module 04 - [Foundation] Responsive Web Design and Project</a>
-                </li>
-            </ul>
-        </div>
+    <div
+      class="container my-5 shadow p-3 mb-5 bg-body rounded assignment"
+      id="demo_dropdown"
+    >
+      <h2 class="d-flex justify-content-center">Dropdown with Bootstrap</h2>
+      <br />
+      <div class="btn-group dropend">
+        <button
+          type="button"
+          class="btn btn-outline-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          1st Assignment | All Modules
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="#module_01"
+              >Module 01 - [Foundation] Instruction of Web Development and
+              HTML</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#module_02"
+              >Module 02 - [Foundation] Learn CSS</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#module_03"
+              >Module 03 - [Foundation] CSS Framework Strategy and Bootstrap</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#"
+              >Module 04 - [Foundation] Responsive Web Design and Project</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- =============== Card With Bootstrap Class =============== -->
-    <div class="container my-5 shadow p-3 mb-5 bg-body rounded assignment" id="demo_card">
-        <h2 class="d-flex justify-content-center">Card with Bootstrap</h2>
-        <br />
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col" id="module_01">
-                <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded">
-                    <img src="images/html.jpg" class="card-img-top" alt="HTML image" />
-                    <div class="card-body">
-                        <h5 class="card-title">Module 01 - [Foundation] HTML</h5>
-                        <p class="card-text">
-                            Hypertext Markup Language (HTML) is the standard markup language
-                            for documents designed to be displayed in a web browser. It
-                            defines the content and structure of web content. It is often
-                            assisted by technologies such as Cascading Style Sheets (CSS)
-                            and scripting languages such as JavaScript.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://www.w3schools.com/html/" class="btn btn-outline-secondary"
-                            target="_blank">Learn more</a>
-                    </div>
-                </div>
+    <div
+      class="container my-5 shadow p-3 mb-5 bg-body rounded assignment"
+      id="demo_card"
+    >
+      <h2 class="d-flex justify-content-center">Card with Bootstrap</h2>
+      <br />
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" id="module_01">
+          <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded">
+            <img src="images/html.jpg" class="card-img-top" alt="HTML image" />
+            <div class="card-body">
+              <h5 class="card-title">Module 01 - [Foundation] HTML</h5>
+              <p class="card-text">
+                Hypertext Markup Language (HTML) is the standard markup language
+                for documents designed to be displayed in a web browser. It
+                defines the content and structure of web content. It is often
+                assisted by technologies such as Cascading Style Sheets (CSS)
+                and scripting languages such as JavaScript.
+              </p>
             </div>
-            <div class="col" id="module_02">
-                <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded">
-                    <img src="images/css.png" class="card-img-top" alt="CSS image" />
-                    <div class="card-body">
-                        <h5 class="card-title">Module 03 - [Foundation] CSS</h5>
-                        <p class="card-text">
-                            Cascading Style Sheets (CSS) is a style sheet language used for
-                            specifying the presentation and styling of a document written in
-                            a markup language such as HTML or XML (including XML dialects
-                            such as SVG, MathML or XHTML). CSS is a cornerstone technology
-                            of the World Wide Web, alongside HTML and JavaScript.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://www.w3schools.com/css/default.asp" class="btn btn-outline-secondary"
-                            target="_blank">Learn more</a>
-                    </div>
-                </div>
+            <div class="card-footer">
+              <a
+                href="https://www.w3schools.com/html/"
+                class="btn btn-outline-secondary"
+                target="_blank"
+                >Learn more</a
+              >
             </div>
-            <div class="col" id="module_03">
-                <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded">
-                    <img src="images/bootstrap.png" class="card-img-top" alt="Bootstrap image" />
-                    <div class="card-body">
-                        <h5 class="card-title">Module 03 - [Foundation] Bootstrap</h5>
-                        <p class="card-text">
-                            Bootstrap is a free front-end framework for faster and easier
-                            web development. Bootstrap includes HTML and CSS based design
-                            templates for typography, forms, buttons, tables, navigation,
-                            modals, image carousels and many other, as well as optional
-                            JavaScript plugins.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp"
-                            class="btn btn-outline-secondary" target="_blank">Learn more</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col" id="module_02">
+          <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded">
+            <img src="images/css.png" class="card-img-top" alt="CSS image" />
+            <div class="card-body">
+              <h5 class="card-title">Module 03 - [Foundation] CSS</h5>
+              <p class="card-text">
+                Cascading Style Sheets (CSS) is a style sheet language used for
+                specifying the presentation and styling of a document written in
+                a markup language such as HTML or XML (including XML dialects
+                such as SVG, MathML or XHTML). CSS is a cornerstone technology
+                of the World Wide Web, alongside HTML and JavaScript.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://www.w3schools.com/css/default.asp"
+                class="btn btn-outline-secondary"
+                target="_blank"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col" id="module_03">
+          <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded">
+            <img
+              src="images/bootstrap.png"
+              class="card-img-top"
+              alt="Bootstrap image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Module 03 - [Foundation] Bootstrap</h5>
+              <p class="card-text">
+                Bootstrap is a free front-end framework for faster and easier
+                web development. Bootstrap includes HTML and CSS based design
+                templates for typography, forms, buttons, tables, navigation,
+                modals, image carousels and many other, as well as optional
+                JavaScript plugins.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp"
+                class="btn btn-outline-secondary"
+                target="_blank"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- =============== Progress With Bootstrap Class =============== -->
-    <div class="container my-3 shadow p-3 mb-5 bg-body rounded assignment" id="demo_progress">
-        <h2 class="d-flex justify-content-center">Progress with Bootstrap</h2>
-        <br />
-        <h4>My Skills</h4>
-        <br />
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0"
-                aria-valuemax="100">
-                HTML - 98%
-            </div>
+    <div
+      class="container my-3 shadow p-3 mb-5 bg-body rounded assignment"
+      id="demo_progress"
+    >
+      <h2 class="d-flex justify-content-center">Progress with Bootstrap</h2>
+      <br />
+      <h4>My Skills</h4>
+      <br />
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: 98%"
+          aria-valuenow="98"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          HTML - 98%
         </div>
-        <br />
+      </div>
+      <br />
 
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0"
-                aria-valuemax="100">
-                CSS - 92%
-            </div>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: 92%"
+          aria-valuenow="92"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          CSS - 92%
         </div>
-        <br />
+      </div>
+      <br />
 
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
-                aria-valuemax="100">
-                BOOTSTRAP - 95%
-            </div>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: 95%"
+          aria-valuenow="95"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          BOOTSTRAP - 95%
         </div>
-        <br />
+      </div>
+      <br />
 
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                aria-valuemax="100">
-                JAVASCRIPT - 90%
-            </div>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: 90%"
+          aria-valuenow="90"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          JAVASCRIPT - 90%
         </div>
-        <br />
+      </div>
+      <br />
 
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
-                aria-valuemax="100">
-                Git & Github - 95%
-            </div>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: 95%"
+          aria-valuenow="95"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          Git & Github - 95%
         </div>
+      </div>
     </div>
 
     <!-- =============== Table With Bootstrap Class =============== -->
-    <div class="container my-5 shadow p-3 mb-5 bg-body rounded assignment" id="demo_table">
-        <h2 class="d-flex justify-content-center">Table with Bootstrap</h2>
-        <br />
-        <h4>My Quiz Marks</h4>
-        <table class="table table-striped table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">Week</th>
-                    <th scope="col">Skill</th>
-                    <th scope="col">Mark</th>
-                    <th scope="col">Full Mark</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>HTML</td>
-                    <td>20</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>CSS</td>
-                    <td>20</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Bootstrap</td>
-                    <td>20</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Git & Github</td>
-                    <td>20</td>
-                    <td>20</td>
-                </tr>
-            </tbody>
-        </table>
+    <div
+      class="container my-5 shadow p-3 mb-5 bg-body rounded assignment"
+      id="demo_table"
+    >
+      <h2 class="d-flex justify-content-center">Table with Bootstrap</h2>
+      <br />
+      <h4>My Quiz Marks</h4>
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Skill</th>
+            <th scope="col">Mark</th>
+            <th scope="col">Full Mark</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>HTML</td>
+            <td>20</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>CSS</td>
+            <td>20</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Bootstrap</td>
+            <td>20</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>JavaScript</td>
+            <td>20</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Git & Github</td>
+            <td>20</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <!-- =============== Contact Form With Bootstrap Class =============== -->
-    <div class="container my-5 shadow p-3 mb-5 bg-body rounded assignment" id="demo_contact_form">
-        <h2 class="d-flex justify-content-center">Form with Bootstrap</h2>
-        <br />
-        <h4>Contact us</h4>
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                <div id="emailHelp" class="form-text">
-                    We'll never share your email with anyone else.
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" />
-                <div id="emailHelp" class="form-text">
-                    Must be 8-20 characters long.
-                </div>
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-outline-secondary">Submit</button>
-        </form>
+    <div
+      class="container my-5 shadow p-3 mb-5 bg-body rounded assignment"
+      id="demo_contact_form"
+    >
+      <h2 class="d-flex justify-content-center">Form with Bootstrap</h2>
+      <br />
+      <h4>Contact us</h4>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+          <div id="emailHelp" class="form-text">
+            Must be 8-20 characters long.
+          </div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-outline-secondary">Submit</button>
+      </form>
     </div>
-
-
 
     <!-- =============== Pagination With Bootstrap Class =============== -->
     <div
@@ -348,13 +483,12 @@
       </div>
     </div>
 
-
-
-
-
+    <!-- =============== Footer =============== -->
+    <footer class="d-flex justify-content-center">
+      <small class=""> © All Rights Reserved 2024 | Omor Sifat</small>
+    </footer>
 
     <!-- =============== Bootstrap JS (for dropdowns, modals, etc.) =============== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
