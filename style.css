@@ -1,16 +1,16 @@
-
-
+p {
+  color: dimgray;
+}
 
 .assignment {
-    margin-bottom: 100px !important;
-  }
-  .card-img-top {
-    height: 191.59px !important;
-  }
-  
-  p {
-    color: dimgray;
-  }
-  
+  margin-bottom: 100px !important;
+}
 
+.card-img-top {
+  /* height: 191.59px !important; */
+  height: 200px;
+}
 
+#demo_dropdown{
+  margin-bottom: 132px !important; 
+}
